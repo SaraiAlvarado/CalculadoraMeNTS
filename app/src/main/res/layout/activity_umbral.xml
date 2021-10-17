@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Umbral">
+
+
+    <TextView
+        android:id="@+id/fondo"
+        android:layout_width="415dp"
+        android:layout_height="258dp"
+        android:background="@drawable/datos_del_paciente"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numresultado"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:background="@drawable/recomendacion"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/umbral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/uno"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toStartOf="@+id/titulo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="236dp"
+        android:layout_height="77dp"
+        android:gravity="center"
+        android:text="Resultado del Cálculo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.697"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/puntocorte"
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Punto de corte"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calcular"
+        app:layout_constraintEnd_toStartOf="@+id/umbral"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.855"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Resultado"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/puntocorte"
+        app:layout_constraintEnd_toStartOf="@+id/numresultado"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.666"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/umbral"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:background="@drawable/recomendacion"
+        android:gravity="center"
+        android:hint="umbral"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+        tools:ignore="Autofill,HardcodedText"/>
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="225dp"
+        android:layout_height="64dp"
+        android:background="@drawable/terminar"
+        android:text="Calcular"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/nombrep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.955"
+        tools:ignore="HardcodedText">
+
+    </Button>
+
+    <Button
+        android:id="@+id/terminar"
+        android:layout_width="225dp"
+        android:layout_height="64dp"
+        android:background="@drawable/terminar"
+        android:text="Terminar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.877"
+        tools:ignore="HardcodedText">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/nombrep"
+        android:layout_width="334dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/recomendacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.921" />
+
+    <TextView
+        android:id="@+id/recomendacion"
+        android:layout_width="295dp"
+        android:layout_height="70dp"
+        android:background="@drawable/recomendacion"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/terminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.917" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

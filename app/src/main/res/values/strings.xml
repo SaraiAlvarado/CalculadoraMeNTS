@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string-array name="EnfermedadPulmonar">
+        <item>Seleccione</item>
+        <item>Ninguna</item>
+        <item>Mínimo (Rara vez utiliza inhalador)</item>
+        <item>Mayor al Mínimo</item>
+    </string-array>
+
+    <string-array name="EnfermedadCardiaca">
+        <item>Seleccione</item>
+        <item>No</item>
+        <item>Mínimo (No necesita medicinas)</item>
+        <item>Leve (Una medicina)</item>
+        <item>Moderado (Dos medicinas)</item>
+        <item>Grave (Más de dos medicinas)</item>
+    </string-array>
+
+    <string-array name="Diabetes">
+        <item>Seleccione</item>
+        <item>No</item>
+        <item>Leve (No necesita medicinas)</item>
+        <item>Moderado (Solo medicinas orales)</item>
+        <item>Grave (Insulina)</item>
+    </string-array>
+
+    <string-array name="Inmuno">
+        <item>Seleccione</item>
+        <item>No</item>
+        <item>Leve</item>
+        <item>Moderado</item>
+        <item>Severo</item>
+    </string-array>
+
+    <string-array name="Apnea">
+        <item>Seleccione</item>
+        <item>No presenta</item>
+        <item>Leve/Moderada (No CPAP)</item>
+        <item>Con presión positiva continua en vía aérea (CPAP)</item>
+    </string-array>
+
+    <string-array name="Covid">
+        <item>Seleccione</item>
+        <item>No</item>
+        <item>Probablemente no</item>
+        <item>Posiblemente</item>
+        <item>Probablemente si</item>
+        <item>Si</item>
+    </string-array>
+
+    <string-array name="Eficacia">
+        <item>Seleccione</item>
+        <item>Ninguno Disponible</item>
+        <item>Disponible, menos del 40% de efectividad</item>
+        <item>Disponible, entre 40–60% de efectividad</item>
+        <item>Disponible, entre 61–95% de efectividad</item>
+        <item>Disponible, igual de efectivo</item>
+    </string-array>
+
+    <string-array name="Disponibilidad">
+        <item>Seleccione</item>
+        <item>Significtivamente peor</item>
+        <item>Algo peor</item>
+        <item>Equivalente</item>
+        <item>Un poco mejor</item>
+        <item>Significativamente mejor</item>
+    </string-array>
+
+    <string-array name="Sitio">
+        <item>Seleccione</item>
+        <item>Cirugía Abdominopélvica mínimamente invasiva</item>
+        <item>Cirugía abierta Abdominopélvica infraumbilical</item>
+        <item>Cirugía abierta Abdominopélvica supraumbilical</item>
+        <item>Otorrinolaringólogo/superior Gastrointestinal/Torácica</item>
+        <item>Ninguna de las anteriores</item>
+    </string-array>
+
+</resources>

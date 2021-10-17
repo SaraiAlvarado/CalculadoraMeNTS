@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioSesion">
+
+    <TextView
+        android:id="@+id/fondo"
+        android:layout_width="409dp"
+        android:layout_height="107dp"
+        android:background="@drawable/hack"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/hack"
+        android:layout_width="411dp"
+        android:layout_height="421dp"
+        android:background="@drawable/inicio"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:background="@drawable/logo"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/mensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="287dp"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:text="Bienvenido a la Calculadora MeNTS"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.863"
+        tools:ignore="HardcodedText" />
+
+    <TableLayout
+        android:layout_width="376dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/iniciarb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hack">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+
+            <TextView
+                android:id="@+id/paso1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pasos"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/paso11"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Datos del paciente"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/paso2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pasos"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/paso21"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Datos de la enfermedad"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:padding="10dip">
+
+            <TextView
+                android:id="@+id/paso3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pasos"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/paso31"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Datos del procedimiento"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/paso4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pasos"
+                android:gravity="center"
+                android:text="4"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/paso41"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Resultados del cálculo"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/iniciarb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inciar cálculo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944"
+        tools:ignore="HardcodedText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
